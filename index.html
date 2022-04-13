@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>  
+    <form class="form" autocomplete="off">
+        <div class="autocomplete">
+            <input id="myInput" type="text" class="search" placeholder="search location">
+        </div>
+    </form>
+    <div class="location">
+        <h1 class="location-timezone">Timezone</h1>
+        <!--<p>Icon</p>-->
+    </div>
+    <div class="temperature">
+        <div class="degree-section">
+            <div class="info">
+                <p id="icon"></p>
+                <div class="description">description</div>
+            </div>
+            <h2 class="temp-degree">temp</h2>
+        </div>
+        <div class="toggle-buttons">
+            <button class="F" value="On">F</button>
+            <button class="C" value="Off">C</button>
+        </div>
+        <!--<div class="temp-description">description</div>-->
+    </div>
+    <h1 id="forecast-header">7 day forecast</h1>
+    <div class="forecast">
+        <div class="day">
+            <div class="day-name">Mon</div>
+            <p id="icon1"></p>
+            <div class="day-temp">temp</div>
+        </div>
+        <div class="day">
+            <div class="day-name">Tues</div>
+            <p id="icon2"></p>
+            <div class="day-temp">temp</div>
+        </div>
+        <div class="day">
+            <div class="day-name">Wed</div>
+            <p id="icon3"></p>
+            <div class="day-temp">temp</div>
+        </div>
+        <div class="day">
+            <div class="day-name">Thurs</div>
+            <p id="icon4"></p>
+            <div class="day-temp">temp</div>
+        </div>
+        <div class="day">
+            <div class="day-name">Fri</div>
+            <p id="icon5"></p>
+            <div class="day-temp">temp</div>
+        </div>
+        <div class="day">
+            <div class="day-name">Sat</div>
+            <p id="icon6"></p>
+            <div class="day-temp">temp</div>
+        </div>
+        <div class="day">
+            <div class="day-name">Sun</div>
+            <p id="icon7"></p>
+            <div class="day-temp">temp</div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
