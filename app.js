@@ -1,5 +1,4 @@
 import { cities } from "./cities.js";
-import { example } from "./cities.js";
 
 const apiKey = "a787157db59aab868102b797a6574571";
 
@@ -12,8 +11,7 @@ const celsius = document.querySelector(".C");
 //let submitted = false;
 let searchedLocation = "";
 
-const url = (location) =>
-  `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
+const url = (location) => `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
 const urlForecast = (lat, long) =>
   `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=current,minutely,hourly,alerts&appid=${apiKey}`;
 
