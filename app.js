@@ -1,6 +1,6 @@
 import { cities } from "./cities.js";
 
-const apiKey = "a787157db59aab868102b797a6574571";
+const apiKey = "";
 
 const form = document.querySelector(".form");
 const search = document.querySelector(".search");
@@ -84,14 +84,6 @@ function convertTemperature(K) {
   } else return Math.floor(K - 273.15);
 }
 
-/*form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const location = search.value;
-    if(location){
-        getLocation(location);
-    }
-});*/
-
 fahrenheit.addEventListener("click", (e) => {
   e.preventDefault();
   if (fahrenheit.value === "Off") {
@@ -167,7 +159,6 @@ function autocomplete(input, arr) {
       currentFocus++;
       addActive(x);
     } else if (e.keyCode == 13) {
-      //e.preventDefault();
       if (currentFocus > -1) {
         if (x) x[currentFocus].click();
       }
